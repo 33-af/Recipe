@@ -1,0 +1,35 @@
+---
+import { Image } from 'astro:assets';
+import faceBookIcon from '../assets/facebook.svg';
+import twitterIcon from '../assets/twitter.svg'
+import instagramIcon from '../assets/instagram.svg'
+---
+
+<header class="h-[110px] py-10 border-b-[1px] border-solid border-b-[#0000001A] mb-10">
+    <div class=" flex items-center justify-between  container-layout mt-10 h-8 ">
+        
+        <h1 class="logo">Foodieland<span class="text-[#FF7426] text">.</span></h1>
+        <nav >
+            <ul class="flex-center gap-22">
+                <li class="link"><a href="" class="link">Home</a></li>
+                <li class="link"><a href="">Recipes</a></li>
+                <li class="link"><a href="">Blog</a></li>
+                <li class="link"><a href="">Contact</a></li>
+                <li class="link"><a href="">About us</a></li>
+            </ul>
+        </nav>
+        <div class="flex-center gap-10">
+            <a href=""><Image src={faceBookIcon} alt="Facebook-icon" /></a>
+            <a href="">   <Image src={twitterIcon} alt="Twitter-icon" /></a>
+            <a href=""> <Image src={instagramIcon} alt="Twitter-icon" /></a>
+         
+           
+            <!-- <img src="" alt="">
+            <img src="" alt=""> -->
+        </div>
+    </div>
+</header>
+
+<style is:global>
+    @import "../styles/global.css";
+  </style>
