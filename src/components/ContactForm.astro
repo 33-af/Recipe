@@ -1,0 +1,90 @@
+---
+import { Image } from "astro:assets";
+import cookImage from "../assets/cook.png";
+---
+
+<div class="container-layout">
+    <h1 class="text-[64px] font-semibold text-center">Contact us</h1>
+
+    <div class="mt-16 flex items-start justify-between">
+        <Image src={cookImage} alt="" />
+
+        <div class="ml-10">
+            <form class="flex flex-wrap justify-between">
+                <div>
+                    <label
+                        class="block text-[12px] uppercase text-black/60 mb-3"
+                        for="name">name</label
+                    >
+                    <input
+                        class="block w-100 py-[18px] px-[20px] text-[14px] rounded-2xl border border-black/10"
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name..."
+                    />
+                </div>
+
+                <div>
+                    <label
+                        class="block text-[12px] uppercase text-black/60 mb-3"
+                        for="name">emAIL aDDRESS</label
+                    >
+                    <input
+                        class="block w-100 py-[18px] px-[20px] text-[14px] rounded-2xl border border-black/10"
+                        type="text"
+                        id="name"
+                        placeholder="Your email address..."
+                    />
+                </div>
+
+                <div class="mt-10">
+                    <label
+                        class="block text-[12px] uppercase text-black/60 mb-3"
+                        for="name">Subject</label
+                    >
+                    <input
+                        class="block w-100 py-[18px] px-[20px] text-[14px] rounded-2xl border border-black/10"
+                        type="text"
+                        id="name"
+                        placeholder="Enter subject..."
+                    />
+                </div>
+
+                <div class="mt-10">
+                    <label
+                        class="block text-[12px] uppercase text-black/60 mb-3"
+                        for="name">ENquiry type</label
+                    >
+                    <input
+                        class="block w-100 py-[18px] px-[20px] text-[14px] rounded-2xl border border-black/10"
+                        type="text"
+                        id="name"
+                        placeholder="Advertising"
+                    />
+                </div>
+
+                <div class="mt-10 w-full">
+                    <label
+                        class="block text-[12px] uppercase text-black/60 mb-3"
+                        for="name">MEssages</label
+                    >
+                    <textarea
+                        class="block min-w-full h-[185px] py-[18px] px-[20px] text-[14px] rounded-2xl border border-black/10"
+                        id="name"
+                        placeholder="Enter your messages..."
+                    />
+                </div>
+            </form>
+
+            <button
+            type="submit"
+            class="bg-black py-5 px-11 w-40 h-15 mt-12 rounded-2xl text-white"
+            >Submit</button
+        >
+        </div>
+    </div>
+</div>
+
+<style is:global>
+    @import "../styles/global.css";
+</style>
