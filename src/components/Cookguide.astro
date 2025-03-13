@@ -1,0 +1,397 @@
+---
+import recipe from "../assets/recipe.png";
+import cookImage from "../assets/cookImage.png";
+import { Image } from "astro:assets";
+---
+
+<div class="flex justify-between items-start gap-10 container-layout">
+    <div class="w-[65%]">
+        <h1 class="text-[36px] font-semibold">Ingredients</h1>
+        <h2 class="mt-12 text-[24px] font-semibold">For main dish</h2>
+
+        <div class="space-y-4">
+            <label
+                class="flex w-full items-center gap-3 cursor-pointer py-8 border-b border-black/10 text-[18px]"
+            >
+                <input type="checkbox" class="peer hidden" />
+                <span
+                    class="w-5 h-5 border-2 border-gray-400 rounded-full flex items-center justify-center peer-checked:border-black peer-checked:bg-black"
+                >
+                    <svg
+                        class="w-3 h-3 text-white hidden peer-checked:block"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </span>
+                <span
+                    class="text-black peer-checked:line-through peer-checked:text-gray-400 transition-all duration-200"
+                >
+                    Lorem ipsum dolor sit amet
+                </span>
+            </label>
+
+            <label
+                class="flex w-full items-center gap-3 cursor-pointer py-8 border-b border-black/10 text-[18px]"
+            >
+                <input type="checkbox" class="peer hidden" />
+                <span
+                    class="w-5 h-5 border-2 border-gray-300 rounded-full flex items-center justify-center peer-checked:border-black peer-checked:bg-black"
+                >
+                    <svg
+                        class="w-3 h-3 text-white hidden peer-checked:block"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </span>
+                <span
+                    class="text-black peer-checked:line-through peer-checked:text-gray-400 transition-all duration-200"
+                >
+                    Lorem ipsum dolor sit amet
+                </span>
+            </label>
+
+            <label
+                class="flex w-full items-center gap-3 cursor-pointer py-8 border-b border-black/10 text-[18px]"
+            >
+                <input type="checkbox" class="peer hidden" />
+                <span
+                    class="w-5 h-5 border-2 border-gray-300 rounded-full flex items-center justify-center peer-checked:border-black peer-checked:bg-black"
+                >
+                    <svg
+                        class="w-3 h-3 text-white hidden peer-checked:block"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </span>
+                <span
+                    class="text-black peer-checked:line-through peer-checked:text-gray-400 transition-all duration-200"
+                >
+                    Lorem ipsum dolor sit amet
+                </span>
+            </label>
+
+            <label
+                class="flex w-full items-center gap-3 cursor-pointer py-8 border-b border-black/10 text-[18px]"
+            >
+                <input type="checkbox" class="peer hidden" />
+                <span
+                    class="w-5 h-5 border-2 border-gray-300 rounded-full flex items-center justify-center peer-checked:border-black peer-checked:bg-black"
+                >
+                    <svg
+                        class="w-3 h-3 text-white hidden peer-checked:block"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </span>
+                <span
+                    class="text-black peer-checked:line-through peer-checked:text-gray-400 transition-all duration-200"
+                >
+                    Lorem ipsum dolor sit amet
+                </span>
+            </label>
+
+            <label
+                class="flex w-full items-center gap-3 cursor-pointer py-8 border-b border-black/10 text-[18px]"
+            >
+                <input type="checkbox" class="peer hidden" />
+                <span
+                    class="w-5 h-5 border-2 border-gray-300 rounded-full flex items-center justify-center peer-checked:border-black peer-checked:bg-black"
+                >
+                    <svg
+                        class="w-3 h-3 text-white hidden peer-checked:block"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </span>
+                <span
+                    class="text-black peer-checked:line-through peer-checked:text-gray-400 transition-all duration-200"
+                >
+                    Lorem ipsum dolor sit amet
+                </span>
+            </label>
+        </div>
+
+        <h2 class="text-[24px] font-semibold mt-16">For the sauce</h2>
+
+        <div class="space-y-4">
+            <label
+                class="flex items-center gap-3 cursor-pointer py-8 border-b border-black/10 text-[18px]"
+            >
+                <input type="checkbox" class="peer hidden" />
+                <span
+                    class="w-5 h-5 border-2 border-gray-400 rounded-full flex items-center justify-center peer-checked:border-black peer-checked:bg-black"
+                >
+                    <svg
+                        class="w-3 h-3 text-white hidden peer-checked:block"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </span>
+                <span
+                    class="text-black peer-checked:line-through peer-checked:text-gray-400 transition-all duration-200"
+                >
+                    Lorem ipsum dolor sit amet
+                </span>
+            </label>
+
+            <label
+                class="flex items-center gap-3 cursor-pointer py-8 border-b border-black/10 text-[18px]"
+            >
+                <input type="checkbox" class="peer hidden" />
+                <span
+                    class="w-5 h-5 border-2 border-gray-400 rounded-full flex items-center justify-center peer-checked:border-black peer-checked:bg-black"
+                >
+                    <svg
+                        class="w-3 h-3 text-white hidden peer-checked:block"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </span>
+                <span
+                    class="text-black peer-checked:line-through peer-checked:text-gray-400 transition-all duration-200"
+                >
+                    Lorem ipsum dolor sit amet
+                </span>
+            </label>
+
+            <label
+                class="flex items-center gap-3 cursor-pointer py-8 border-b border-black/10 text-[18px]"
+            >
+                <input type="checkbox" class="peer hidden" />
+                <span
+                    class="w-5 h-5 border-2 border-gray-300 rounded-full flex items-center justify-center peer-checked:border-black peer-checked:bg-black"
+                >
+                    <svg
+                        class="w-3 h-3 text-white hidden peer-checked:block"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </span>
+                <span
+                    class="text-black peer-checked:line-through peer-checked:text-gray-400 transition-all duration-200"
+                >
+                    Lorem ipsum dolor sit amet
+                </span>
+            </label>
+        </div>
+
+        <h1 class="mt-22 mb-9 text-[36px] font-semibold">Directions</h1>
+
+        <div class="space-y-4">
+            <label
+                class="flex items-center font-semibold gap-3 cursor-pointer py-8 border-b border-black/10 text-[24px]"
+            >
+                <input type="checkbox" class="peer hidden" />
+                <span
+                    class="w-5 h-5 border-2 border-gray-400 rounded-full flex items-center justify-center peer-checked:border-black peer-checked:bg-black"
+                >
+                    <svg
+                        class="w-3 h-3 text-white hidden peer-checked:block"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </span>
+                <span
+                    class="text-black peer-checked:line-through peer-checked:text-gray-400 transition-all duration-200"
+                >
+                    1. Lorem ipsum dolor sit amet
+                </span>
+            </label>
+
+            <p class="text-[16px] text-black/60 font-normal">
+                Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur
+                magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem
+                ipsum quia dolor sit amet, consectetur, adipisci
+                velit, sed quia non numquam eius modi tempora
+                incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem.
+            </p>
+
+            <div class="my-12"><Image src={cookImage} alt=""/></div>
+
+            <p class="text-[16px] text-black/60 font-normal">
+                Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur
+                magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem
+                ipsum quia dolor sit amet, consectetur, adipisci
+                velit, sed quia non numquam eius modi tempora
+                incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem.
+            </p>
+
+            <label
+                class="flex items-center font-semibold gap-3 cursor-pointer py-8 border-b border-black/10 text-[24px]"
+            >
+                <input type="checkbox" class="peer hidden" />
+                <span
+                    class="w-5 h-5 border-2 border-gray-400 rounded-full flex items-center justify-center peer-checked:border-black peer-checked:bg-black"
+                >
+                    <svg
+                        class="w-3 h-3 text-white hidden peer-checked:block"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </span>
+                <span
+                    class="text-black peer-checked:line-through peer-checked:text-gray-400 transition-all duration-200"
+                >
+                    2. Lorem ipsum dolor sit amet
+                </span>
+            </label>
+
+            <p class="text-[16px] text-black/60 font-normal">
+                Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur
+                magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem
+                ipsum quia dolor sit amet, consectetur, adipisci
+                velit, sed quia non numquam eius modi tempora
+                incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem.
+            </p>
+
+            <label
+                class="flex items-center font-semibold gap-3 cursor-pointer py-8 border-b border-black/10 text-[24px]"
+            >
+                <input type="checkbox" class="peer hidden" />
+                <span
+                    class="w-5 h-5 border-2 border-gray-300 rounded-full flex items-center justify-center peer-checked:border-black peer-checked:bg-black"
+                >
+                    <svg
+                        class="w-3 h-3 text-white hidden peer-checked:block"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </span>
+                <span
+                    class="text-black peer-checked:line-through peer-checked:text-gray-400 transition-all duration-200"
+                >
+                    3. Lorem ipsum dolor sit amet
+                </span>
+            </label>
+
+            <p class="text-[16px] text-black/60 font-normal">
+                Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur
+                magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem
+                ipsum quia dolor sit amet, consectetur, adipisci
+                velit, sed quia non numquam eius modi tempora
+                incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem.
+            </p>
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-6">
+        <h1 class="text-[32px] font-semibold mb-2">Other Recipe</h1>
+        <div class="flex items-center gap-6 max-w-[400px]">
+            <Image src={recipe} alt="" />
+            <div>
+                <div class="text-[18px] mb-4 font-semibold">
+                    Chicken Meatball with Creamy Chees...
+                </div>
+                <p class="text-black/60 text-[14px]">
+                    By Andreas Paula
+                </p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-6 max-w-[400px]">
+            <Image src={recipe} alt="" />
+            <div>
+                <div class="text-[18px] mb-4 font-semibold">
+                    Chicken Meatball with Creamy Chees...
+                </div>
+                <p class="text-black/60 text-[14px]">
+                    By Andreas Paula
+                </p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-6 max-w-[400px]">
+            <Image src={recipe} alt="" />
+            <div>
+                <div class="text-[18px] mb-4 font-semibold">
+                    Chicken Meatball with Creamy Chees...
+                </div>
+                <p class="text-black/60 text-[14px]">
+                    By Andreas Paula
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style is:global>
+    @import "../styles/global.css";
+</style>

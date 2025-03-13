@@ -1,0 +1,131 @@
+---
+import avatar from "../assets/avatar.svg";
+import timer from "../assets/Timer.svg";
+import forkKnife from "../assets/ForkKnife.svg";
+import printer from "../assets/printer.png";
+import share from "../assets/share.png";
+import recipeImage from "../assets/recipeImage.jpg";
+import { Image } from "astro:assets";
+---
+
+<section class="container-layout pt-20">
+    <div>
+        <div class="flex items-center justify-between">
+            <div>
+                <h1 class="text-[68px] font-semibold mb-12">
+                    Health Japanese Fried Rice
+                </h1>
+                <div class="flex gap-[64px]">
+                    <div class="flex items-center gap-4">
+                        <Image src={avatar} alt="" />
+                        <div>
+                            <div class="text-[16px] font-bold">John Smith</div>
+                            <div class="text-black/60">15 March 2022</div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <Image src={timer} alt="" />
+                        <div>
+                            <div class="text-[16px] font-bold">PREP TIME</div>
+                            <div class="text-black/60">15 Minutes</div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <Image src={timer} alt="" />
+                        <div>
+                            <div class="text-[16px] font-bold">COOK TIME</div>
+                            <div class="text-black/60">15 Minutes</div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <Image src={forkKnife} alt="" />
+                        <div class="text-black/60">Chicken</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-8">
+                <div>
+                    <div class="bg-[#E7FAFE] p-7 rounded-[50%]">
+                        <Image src={printer} alt="" />
+                    </div>
+
+                    <p class="mt-4 mx-[20px] text-[12px]">PRINT</p>
+                </div>
+
+                <div>
+                    <div class="bg-[#E7FAFE] p-7 rounded-[50%]">
+                        <Image src={share} alt="" />
+                    </div>
+
+                    <p class="mt-4 mx-[20px] text-[12px]">SHARE</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-between mt-[54px]">
+            <div><Image src={recipeImage} alt="" /></div>
+            <div class="bg-[#E7FAFE] p-8 rounded-[30px] w-[400px]">
+                <h3 class="font-semibold mb-2 text-[24px]">
+                    Nutrition Information
+                </h3>
+                <div
+                    class="flex justify-between border-b border-black/10 pb-4 pt-4"
+                >
+                    <div class="text-black/60 text-[16px]">Calories</div>
+                    <div class="text-[18px]">219.9 kcal</div>
+                </div>
+
+                <div
+                    class="flex justify-between border-b border-black/10 pb-4 pt-4"
+                >
+                    <div class="text-black/60 text-[16px]">Total Fat</div>
+                    <div class="text-[18px]">10.7 g</div>
+                </div>
+
+                <div
+                    class="flex justify-between border-b border-black/10 pb-4 pt-4"
+                >
+                    <div class="text-black/60 text-[16px]">Protein</div>
+                    <div class="text-[18px]">7.9 g</div>
+                </div>
+
+                <div
+                    class="flex justify-between border-b border-black/10 pb-4 pt-4"
+                >
+                    <div class="text-black/60 text-[16px]">Carbohydrate</div>
+                    <div class="text-[18px]">22.3 g</div>
+                </div>
+
+                <div
+                    class="flex justify-between border-b border-black/10 pb-4 pt-4"
+                >
+                    <div class="text-black/60 text-[16px]">Cholesterol</div>
+                    <div class="text-[18px]">37.4 mg</div>
+                </div>
+
+                <p class="text-black/60 text-center mt-40">
+                    adipiscing elit, sed do eiusmod tempor <br />
+                    incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+
+        <p class="text-[16px] mt-20 mb-20 text-black/60">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+</section>
+
+<style is:global>
+    @import "../styles/global.css";
+</style>
