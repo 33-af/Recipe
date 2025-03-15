@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import complete from "../assets/complete.svg";
+import SubmitButton from "../components/SubmitButton.astro";
+---
+
+<section class="flex justify-center container-layout">
+    <div
+        class="fixed inset-0 bg-[#424242]/66 flex items-center justify-center z-50"
+    >
+        <div
+            class="bg-white rounded-3xl py-[90px] px-[67px] w-full max-w-[740px] shadow-2xl"
+        >
+            <h1 class="text-[48px] font-semibold text-center">
+                Email Verification
+            </h1>
+            <p class="text-[20px] font-semibold text-center mt-6">
+                Please verify your email to confirm your account. We have sent a
+                6-digit code to your email.
+            </p>
+
+            <button
+                class="flex items-center
+                justify-center text-[20px]
+                text-white w-full py-5 mt-20
+                gap-5 rounded-[7px] bg-black"
+            >
+                Verify
+                <Image src={complete} alt=""/>
+            </button>
+        </div>
+    </div>
+</section>
+
+<style is:global>
+    @import "../styles/global.css";
+</style>
