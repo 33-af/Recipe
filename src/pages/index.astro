@@ -7,12 +7,16 @@ import DeliciouseRecipe from "../components/DeliciouseRecipe.astro";
 import Categories from "../components/Categories.astro";
 import Subscribe from "../components/Subscribe.astro";
 import "../styles/global.css";
+import EmailVerifyModal from "../components/EmailVerifyModal.astro";
+import LoginModal from "../components/LoginModal.astro";
+import SingUpModal from "../components/SingUpModal.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
+  <EmailVerifyModal/>
   <Banner />
   <Categories />
   <Recipe />
