@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import examplAvatar from "../assets/examplAvatar.png";
+import home from "../assets/homeIcon.png";
+import notification from "../assets/notification.png";
+import plus from "../assets/plus.png";
+import burger from "../assets/burger.png";
+import gmail from "../assets/gmail.png";
+import settings from "../assets/Settings.png";
+---
+
+<sidebar class="block">
+    <div class="w-30 bg-black flex flex-col gap-20 items-center py-8">
+        <Image src={examplAvatar} alt="" />
+        <a href="" class="bg-white py-[7px] px-[5px] rounded-[50%]"
+            ><Image src={home} alt="" /></a
+        >
+        <div class="relative">
+            <span
+                class="absolute right-0 bottom-7 bg-white px-[3px] text-[10px] font-semibold rounded-[50%]"
+                >0</span
+            >
+            <Image src={notification} alt="" />
+        </div>
+        <Image src={plus} alt="" />
+        <Image src={burger} alt="" />
+        <Image src={gmail} alt="" />
+
+        <div class="bg-white p-4 rounded-[50%] mt-35"><Image src={settings} alt="" /></div>
+    </div>
+</sidebar>
+
+<style is:global>
+    @import "../../src/styles/global.css";
+</style>

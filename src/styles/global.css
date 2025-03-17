@@ -1,62 +1,56 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-
-:root{
+:root {
   --background: "#FFFFFF";
   --primaryColor: "#000000";
   --secondaryColor: "#00000099";
-
 }
 
-*{
-    font-family: "Inter", sans-serif;
-    box-sizing: border-box;
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 }
 
-.container-layout{
-    max-width: 1280px;
-    margin: 0 auto;
+.container-layout {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-body{
-background-color: var(--background);
-color:var(--primaryColor)
+body {
+  background-color: var(--background);
+  color: var(--primaryColor);
 }
 
 @layer utilities {
-    .flex-center {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .link {
-      color: var(--primaryColor);
-      font-size: 16px;
-      font-weight: 500;
-      text-decoration: none;
-    }
-  
-    .logo {
-      font-family: 'Lobster', cursive !important;
-      font-size: 24px;
-      font-weight: 400;
-    }
-
-    .bg-linear {
-      background: linear-gradient(to bottom, #FFFFFF 0%, #E7F9FD 39%, #E7F9FD 100%);
-    }
-
-    .linear-double {
-      background: linear-gradient(to bottom, #FFFFFF 0%, #E7F9FD 100%);
-    }
-    .image{
-      background-image: url("../assets/subscribe-bg.png");
-      
-    }
-    
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
-  
+
+  .link {
+    color: var(--primaryColor);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .logo {
+    font-family: "Lobster", cursive !important;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .bg-linear {
+    background: linear-gradient(to bottom, #ffffff 0%, #e7f9fd 39%, #e7f9fd 100%);
+  }
+
+  .linear-double {
+    background: linear-gradient(to bottom, #ffffff 0%, #e7f9fd 100%);
+  }
+  .image {
+    background-image: url("../assets/subscribe-bg.png");
+  }
+}
